@@ -47,12 +47,23 @@ func get_random_colour():
 
 func get_texture(col:int):
 	match (col):
-		0: return load("res://Assets/Sprites/green_circle.png")
-		1: return load("res://Assets/Sprites/red_circle.png")
-		2: return load("res://AsseGamts/Sprites/yellow_circle.png")
+		0: return load("res://Assets/Sprites/green_station.png")
+		1: return load("res://Assets/Sprites/red_station.png")
+		2: return load("res://AsseGamts/Sprites/yellow_station.png")
 		_: 
 			print("ERROR " + str(col))
 			return null
+	pass
+	
+func get_passenger_texture(col:int):
+	match (col):
+		0: return load("res://Assets/Sprites/green_passenger.png")
+		1: return load("res://Assets/Sprites/red_passenger.png")
+		2: return load("res://Assets/Sprites/yellow_passenger.png")
+		_:
+			print("ERROR" + str(col))
+			return null
+			
 	pass
 
 
